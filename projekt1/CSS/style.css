@@ -257,6 +257,7 @@ p {
     width: 50%;
     min-height: 100%;
     text-align: justify;
+    background: #f87060 ;
 }
 
 #about-info .info-right img {
@@ -268,6 +269,9 @@ p {
 
 
 /*contact*/
+#conatact {
+    background: ;
+}
 #contact h2 {
     padding-top: 40px;
     padding-bottom: 40px;
