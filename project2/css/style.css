@@ -11,11 +11,12 @@ body {
 }
 
 #logo {
-    font-size: large;
+    font-size: medium;
+    display: flex;
 }
 
 .text-primary {
-    color: #121420;
+    color: cadetblue;
 }
 
 p {
@@ -28,8 +29,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: ;
+    align-items: center;
     padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 #navbar ul {
@@ -51,9 +54,95 @@ p {
 #navbar ul li a:hover {
     background-color: #f87060;
     border-radius: 1px;
-},
+}
 
+/*showcase*/
 #showcase {
     background: #333 url("https://source.unsplash.com/random/?ecology") no-repeat center center/cover;
-    height : 100vh
+    height : 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* utility classes*/
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: chartreuse;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: chartreuse;
+}
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center;
+}
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: chartreuse;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
