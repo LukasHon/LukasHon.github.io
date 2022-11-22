@@ -187,6 +187,10 @@ p {
     display: flex;
 }
 
+#project .project-text {
+    padding: 2rem;
+}
+
 #project div {
     flex: 1;
 }
@@ -195,6 +199,7 @@ p {
     background: url("https://source.unsplash.com/random/?nintendo") no-repeat center;
 }
 
+
 /*footer*/
 #main-footer {
     text-align: center;
@@ -202,4 +207,69 @@ p {
     padding-bottom: 5px;
     font-weight: bold;
     background: #121420FF;
+}
+
+#images {
+    padding: 1rem;
+}
+
+#images .items {
+    display: flex;
+}
+
+#images .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#images .heading-2 {
+    margin: auto;
+}
+
+#images .items img {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact .contact-adress {
+    border-top: 1px gray solid;
+    padding-left: 2rem;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact h3 {
+    margin-top: 2rem;
+}
+
+#contact .btn {
+    margin: 0.75rem;
+}
+
+#contact .btn:hover {
+    background-color: #F9F1EA;
+    border: 1px solid black;
+    color: black;
 }
