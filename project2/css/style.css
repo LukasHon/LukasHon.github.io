@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin-top: 0;
-    padding: 0;
+    margin: 0;
+
 }
 
 
@@ -244,10 +244,12 @@ p {
 #contact .contact-adress {
     border-top: 1px gray solid;
     padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 #contact .contact-form .form-group {
     margin: 0.75rem;
+    padding-top: 1rem;
 }
 
 #contact .contact-form label {
