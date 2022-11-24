@@ -19,6 +19,11 @@
 
 <nav id="navbar">
     <div id="logo"><a href="index.html">The <span class="text-primary">Eco</span>game</a></div>
+
+    <a href="#" id="hambac">
+        <i class="fa fa-bars"></i>
+    </a>
+
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#what">O hře</a></li>
@@ -196,6 +201,15 @@
 </script>
 
 <script>
+
+    $("#navbar #hambac").click(function () {
+        $("#navbar ul").slideToggle("slow")
+    });
+
+    $("#navbar ul li a").click(function () {
+        $("#navbar ul".hide())
+    })
+
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
