@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-
 }
 
 
@@ -20,9 +19,15 @@ body {
     color: #333;
 }
 
+.bg-primary {
+    background-color: green;
+}
+
+/* Section nav bar */
+
 #logo {
     font-size: medium;
-    display: flex;
+    font-weight: bold;
 }
 
 .text-primary {
@@ -31,6 +36,10 @@ body {
 
 p {
     margin: 0.75rem 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 #navbar {
@@ -46,8 +55,13 @@ p {
     z-index: 2;
 }
 
+#navbar #hambac {
+    display: none;
+}
+
 #navbar ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
 }
@@ -62,7 +76,8 @@ p {
     margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover,
+.active {
     background-color: #f87060;
     border-radius: 1px;
 }
@@ -83,6 +98,7 @@ p {
     height: 100%;
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 /* utility classes*/
@@ -90,6 +106,7 @@ p {
     font-size: 4rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    letter-spacing: 1rem;
 }
 
 .lead {
@@ -100,7 +117,7 @@ p {
 .btn {
     display: inline-block;
     color: #fff;
-    background: chartreuse;
+    background-color: chartreuse;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
@@ -139,6 +156,20 @@ p {
     padding: 3rem 0;
 }
 
+.m-1 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 2.5rem;
+}
+
+.m-3 {
+    margin: 3.5rem;
+}
+
+
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -154,6 +185,21 @@ p {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
+}
+
+.source {
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+    margin: 10px 20px;
+}
+
+.source a {
+    color: #aaa;
+    text-decoration: none;
 }
 
 #what .items {
@@ -175,7 +221,8 @@ p {
 }
 
 .list {
-    background-color: #333;
+    margin: 0.5rem 0;
+    list-style: none;
 }
 
 .list li {
@@ -241,19 +288,15 @@ p {
     flex: 1;
 }
 
-#contact .contact-adress {
-    border-top: 1px gray solid;
-    padding-left: 2rem;
-    padding-top: 1rem;
+
+#contact .contact-form, .form-group {
+    margin: 0.75rem;
 }
 
-#contact .contact-form .form-group {
-    margin: 0.75rem;
-    padding-top: 1rem;
-}
 
 #contact .contact-form label {
     display: block;
+    margin-bottom: 3px;
 }
 
 #contact .contact-form input,
@@ -266,12 +309,9 @@ p {
     margin-top: 2rem;
 }
 
-#contact .btn {
-    margin: 0.75rem;
-}
 
-#contact .btn:hover {
-    background-color: #F9F1EA;
-    border: 1px solid black;
-    color: black;
+/* Footer */
+footer {
+    display: flex;
+    height: 400px;
 }
